@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.863);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    min-height: 1550px;
+    margin: 40px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 0.6fr 0.07fr 1.2fr 0.07fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.seccionAb {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
+    grid-gap: 20px;
+    padding: 30px;
+    margin-left: 7%;
+}
+
+.fila {
+    background-color: rgba(221, 212, 212, 0.404);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.fila h1 {
+    font-size: 0.7rem;
+    margin-top: 60px;
+    margin-left: 22px;
+    color: #070707c4;
+}
+
+.fila p {
+    font-size: 0.7rem;
+    margin-top: 0.2px;
+    margin-left: 22px;
+    color: #414141b4;
+}
+
+.fila img {
+    max-width: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+.seccionMe{
+    display: grid;
+    grid-template-columns: 1.3fr 0.4fr 0.4fr 0.4fr 0.5fr 1.1fr;
+    grid-gap: 3px;   
+}
+.medio{
+    display: grid;
+    grid-template-columns: 0.2fr 3fr;   
+}
+
+.seccionMe h1 {
+    font-size: 0.7rem;
+    margin-top: 30px;    
+    color: #070707c4;
+}
+
+.medio p {
+    font-size: 0.7rem;
+    margin-top: 30px;    
+    color: #414141b4;
+}
+.medio1 p {
+    font-size: 0.7rem;
+    margin-top: 30px;
+    margin-left: 10px;    
+    color: #414141b4;
+}
+
+.seccionAr{
+    background-color: rgba(221, 212, 212, 0.404);
+    display: grid;
+    grid-template-rows: 0.9fr 4fr;   
+}
+.arribaA{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 3fr 1fr 0.5fr;   
+}
+.arribaB{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;   
+}
+
+.arriba1 img {
+    max-width: 20%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+.arriba2 p {
+    font-size: 0.7rem;
+    margin-top: 30px;
+    margin-left: 20%;    
+    color: #414141b4;
+}
+.arriba3{
+    letter-spacing: 0.6em;
+    font-size: 0.7rem;
+    margin-top: 20px;
+    margin-left: 47%; 
+}
+.arriba4{
+    font-size: 0.7rem;
+    margin-top: 30px;
+    margin-left: 50%;    
+    color: #050505;
+}
+.arriba5{
+    font-size: 0.7rem;
+    margin-top: 30px;
+    margin-left: 20%;    
+    color: #050505;
+}
+.arriba6 h1 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    margin-left: 100px;
+}
+.arriba6 p{
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: 100px;    
+    color: #414141f3;
+}
+.arriba6 button {
+    justify-content: center;
+    background-color: rgba(221, 212, 212, 0);
+     color: #082f49b2;
+     border: 2px solid #082f49b2;
+     padding: 14px 40px;
+     cursor: pointer;
+     margin-top: 40px;
+     margin-left: 100px;
+     font-size: 1.1rem;
+   }
+
+.arriba6 .ya{
+    font-size: 0.6rem;
+    margin-top: 90px;
+    margin-left: 100px;    
+    color: #000000f3;
+}
+.arriba7 img {
+    max-width: 90%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+    margin-top: 100px;
+}
+.arriba7 p{
+    font-size: 0.6rem;
+    margin-top: 60px;
+    margin-left: 230px;    
+    color: #000000f3;
+}
+.abajo1{
+    font-size: 0.7rem;
+    margin-top: 10px;
+    margin-left: 10.5%;    
+    color: #1e2d83a6;
+}
+.abajo2{
+    font-size: 0.25rem;
+    margin-top: -10px;
+    margin-left: 390px;    
+    color: #1e2d83a6;
+}
+.abajo3{
+    font-size: 0.25rem;
+    margin-top: -10px;
+    margin-left: 745px;    
+    color: #1e2d83a6;
+}
+@media (max-width: 480px) {
+    .contenedor{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        
+       
+    }
+    .seccionAr{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        margin-left: 20px;
+    }
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .header, .footer {
+        padding: 0.5em;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 0.5em;
+    }
+    .seccionAb {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 30px;
+        margin-left: 7%;
+    }
+}
